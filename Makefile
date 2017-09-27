@@ -16,6 +16,7 @@ EXPORTED_DOCS=\
  $(SOURCE_DOCS:.md=.html) \
  $(SOURCE_DOCS:.md=.pdf) \
  $(SOURCE_DOCS:.md=.docx) \
+ $(SOURCE_DOCS:.md=.tex) \
  #$(SOURCE_DOCS:.md=.rtf) \
  #$(SOURCE_DOCS:.md=.odt) \
  #$(SOURCE_DOCS:.md=.epub)
@@ -29,6 +30,7 @@ PANDOC_OPTIONS=--smart --standalone
 PANDOC_HTML_OPTIONS=--to html5
 PANDOC_PDF_OPTIONS=
 PANDOC_DOCX_OPTIONS=
+PANDOC_TEX_OPTIONS=
 #PANDOC_RTF_OPTIONS=
 #PANDOC_ODT_OPTIONS=
 #PANDOC_EPUB_OPTIONS=--to epub3
@@ -44,6 +46,9 @@ PANDOC_DOCX_OPTIONS=
 	
 %.docx : %.md
 	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_DOCX_OPTIONS) -o $@ $<
+
+%.tex : %.md
+	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_TEX_OPTIONS) -o $@ $<
 
 #%.rtf : %.md
 #  $(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_RTF_OPTIONS) -o $@ $<
