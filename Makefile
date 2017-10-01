@@ -27,7 +27,7 @@ RM_OPTIONS=-f
 PANDOC := $(shell which pandoc)
 PANDOC_OPTIONS=--smart --standalone
 
-PANDOC_HTML_OPTIONS=--to html5
+PANDOC_HTML_OPTIONS=--to html5 --css resume.css
 PANDOC_PDF_OPTIONS=
 PANDOC_DOCX_OPTIONS=
 PANDOC_TEX_OPTIONS=
