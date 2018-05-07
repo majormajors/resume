@@ -7,9 +7,9 @@ matt.mayers@gmail.com
 
 ## Experience
 
-**Branch Messenger**
-Android Lead
-San Francisco, CA
+**Branch Messenger**  
+Android Lead  
+San Francisco, CA  
 December 2017 - Present
 
 As Android lead, I am responsible for designing app architecture, development workflow, and building automated build, test, and deployment processes.
