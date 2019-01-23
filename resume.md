@@ -83,7 +83,7 @@ Indiana Tech, Computer Science, 2004-2005
 
 ## Links
 
-- [https://matt.horse](https://matt.horse)
+- [https://mattmayers.com](https://mattmayers.com)
 - [https://linkedin.com/in/mattmayers](https://linkedin.com/in/mattmayers)
 - [https://github.com/majormajors](https://github.com/majormajors)
 
