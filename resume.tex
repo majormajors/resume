@@ -1,51 +1,56 @@
-\documentclass[]{article}
-\usepackage{lmodern}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-\else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-  \else
-    \usepackage{fontspec}
-  \fi
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\usepackage{hyperref}
-\hypersetup{unicode=true,
-            pdfborder={0 0 0},
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{0}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
 
+\author{}
 \date{}
 
 \begin{document}
@@ -56,16 +61,36 @@ Software engineer with over a decade of experience across mobile
 development, web development, and systems administration.
 
 San Francisco, CA\\
-matt.mayers@gmail.com
+mmayers at gmail.com
 
 \subsection{Experience}\label{experience}
+
+\textbf{Google}\\
+Software Engineer, L5\\
+San Francisco, CA\\
+February 2021 - Present
+
+In addition to continuing pre-aquisition Fitbit work, I also went on to
+contribute to Health and Fitness features on the Pixel watch. Most
+recently, I worked on a data sync pipeline for two-way data sync between
+Health Connect and the Fitbit app.
+
+\textbf{Fitbit (acquired by Google)}\\
+Senior Software Engineer\\
+San Francisco, CA\\
+March 2019 - February 2021
+
+Led development of several core features of the Fitbit Android app,
+including: Sleep Score; Menstrual Health; Mindfulness. Supported
+development of regulated features requiring strong compliance with FDA
+rules.
 
 \textbf{Branch Messenger}\\
 Android Lead\\
 San Francisco, CA\\
-December 2017 - Present
+December 2017 - February 2019
 
-As Android lead, I am responsible for designing app architecture,
+As Android lead, I was responsible for designing app architecture,
 development workflow, and building automated build, test, and deployment
 processes.
 
@@ -169,11 +194,11 @@ Indiana Tech, Computer Science, 2004-2005
 \begin{itemize}
 \tightlist
 \item
-  \url{https://mattmayers.com}
-\item
   \url{https://linkedin.com/in/mattmayers}
 \item
   \url{https://github.com/majormajors}
+\item
+  \url{https://hg.sr.ht/~majors}
 \end{itemize}
 
 \subsection{References}\label{references}

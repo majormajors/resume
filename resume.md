@@ -3,16 +3,30 @@
 Software engineer with over a decade of experience across mobile development, web development, and systems administration.
 
 San Francisco, CA  
-matt.mayers@gmail.com
+mmayers at gmail.com
 
 ## Experience
+
+**Google**  
+Software Engineer, L5  
+San Francisco, CA  
+February 2021 - Present
+
+In addition to continuing pre-aquisition Fitbit work, I also went on to contribute to Health and Fitness features on the Pixel watch. Most recently, I worked on a data sync pipeline for two-way data sync between Health Connect and the Fitbit app.
+
+**Fitbit (acquired by Google)**  
+Senior Software Engineer  
+San Francisco, CA  
+March 2019 - February 2021
+
+Led development of several core features of the Fitbit Android app, including: Sleep Score; Menstrual Health; Mindfulness. Supported development of regulated features requiring strong compliance with FDA rules.
 
 **Branch Messenger**  
 Android Lead  
 San Francisco, CA  
-December 2017 - Present
+December 2017 - February 2019
 
-As Android lead, I am responsible for designing app architecture, development workflow, and building automated build, test, and deployment processes.
+As Android lead, I was responsible for designing app architecture, development workflow, and building automated build, test, and deployment processes.
 
 **Quizlet**  
 Software Engineer  
@@ -83,9 +97,9 @@ Indiana Tech, Computer Science, 2004-2005
 
 ## Links
 
-- [https://mattmayers.com](https://mattmayers.com)
 - [https://linkedin.com/in/mattmayers](https://linkedin.com/in/mattmayers)
 - [https://github.com/majormajors](https://github.com/majormajors)
+- [https://hg.sr.ht/~majors](https://hg.sr.ht/~majors)
 
 ## References
 
